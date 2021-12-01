@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    min-height: 100vh;
+    background-image: url('./assets/home/background-home-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: grid;
+    grid-template-rows: 20%  80%;    
+    color: white;
+
+}
+
+h1, h2, h3, h4, p{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+h1{
+    font-size: 20vh;
+}
+
+h4{
+    font-size: 32px;
+}
+p{
+    font-size: 16px;
+}
+
+.container-main{
+    display: flex;
+    /* padding: 8rem; */
+    
+}
+.space{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10%;
+   
+}
+.explorer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+}
+.circulo-explorer{
+    height:15rem;
+    width: 15rem;
+    background: white;
+    color: rgb(11,13,23);
+    border-radius: 50%;
+    font-family: Bellefair;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    main{
+       background-image: url('./assets/home/background-home-mobile.jpg');
+    }
+    .circulo-explorer{
+        height:10rem;
+        width: 10rem;
+
+    }
+    
+
+ }
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    main{
+        background-image: url('./assets/home/background-home-tablet.jpg');
+     }
+     .container-main{
+         flex-direction: column;
+     }
+
+ }
+

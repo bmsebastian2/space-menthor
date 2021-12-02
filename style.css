@@ -8,45 +8,154 @@ main{
     min-height: 100vh;
     background-image: url('./assets/home/background-home-desktop.jpg');
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: grid;
-    grid-template-rows: 20%  80%;    
+    background-size: 100% 100%;   
     color: white;
-
+}
+.container{
+    /* border: 1px solid blueviolet;  */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 h1, h2, h3, h4, p{
     font-family: 'Open Sans Condensed', sans-serif;
 }
 h1{
-    font-size: 20vh;
+    font-size: 150px;
+    letter-spacing: 6.75px;
 }
 
 h4{
     font-size: 32px;
 }
+h5{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 28px;
+    letter-spacing: 4.75px;
+    font-style: normal;
+    color: #D0D6F9;
+
+}
 p{
+    font-size: 18px;
+    color:  #D0D6F9;
+    
+}
+.menu{
+    /* border: 1px solid red; */
+    margin-top: 1rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2rem;
+    
+}
+.container-minicirculo{
+    flex:35%;
+   
+}
+.mini-circulo{
+    background: white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+.container-glass{
+    flex: 68%;   
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(81.5485px);
+    
+}
+.linea{
+    height: 1px;
+    width: 40%;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    margin-left: -22rem;
+
+}
+.glass{
+    /* border:1px solid white; */
+    height: 5rem;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 0.2rem;
+    margin-left: 2rem;
+    
+}
+.subrayado{
+    position: relative;
+    height: 2px;
+    background: white;
+    top: 1.8rem;
+    visibility: hidden;
+    
+}
+.menu-num{
+    display: flex;
+}
+.menu-num p{
+    color: white;    
+}
+.menu-num p:nth-child(2){
+    margin-left: 0.5rem;
+}
+
+a{
+    text-decoration: none;
+    font-style: normal;
     font-size: 16px;
+   
+    
+}
+span{
+    font-weight: 700;
+    
 }
 
 .container-main{
+    /* border: 3px solid brown; */
+    flex: 3;
     display: flex;
+    
     /* padding: 8rem; */
     
 }
 .space{
+    /* border:1px solid white; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 10%;
+    justify-content:end;
+    margin: 0rem 25rem 5rem 7rem;   
    
 }
+.space p{
+    font-family: Barlow;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align:justify;
+
+}
 .explorer{
+    /* border:1px solid white; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 10%;
+    justify-content: end;
+    /* justify-content: center; */
+    margin-right: 8rem;
+    margin-bottom: 5rem;
 }
 .circulo-explorer{
     height:15rem;
@@ -65,6 +174,15 @@ p{
     align-items: center;
 
 }
+.circulo-explorer p{
+   font-family: Bellefair;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 37px;
+    letter-spacing: 1.5px;
+    color: #0B0D17;
+}
 
 
 /* // Small devices (landscape phones, less than 768px) */
@@ -73,16 +191,31 @@ p{
        background-image: url('./assets/home/background-home-mobile.jpg');
     }
     .circulo-explorer{
-        height:10rem;
-        width: 10rem;
+        height:8rem;
+        width: 8rem;
 
     }
+    
+    h1{
+        font-size: 75px;
+    }
+    h5{
+        font-size: 18px;
+    }
+    p{        
+        font-size: 15px;      
+        
+    }
+    .circulo-explorer p{
+        font-size: 18px; 
+    }
+   
     
 
  }
 
 /* // Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) { 
+@media (max-width: 1025px) { 
     main{
         background-image: url('./assets/home/background-home-tablet.jpg');
      }
@@ -90,5 +223,13 @@ p{
          flex-direction: column;
      }
 
+     .explorer{
+        margin: 0;
+    }
+
+    .space{
+        text-align: center;
+        margin: 0;
+    }
  }
 
